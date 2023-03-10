@@ -1,7 +1,7 @@
 //import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import UseReducer from "./UseReducer";
-
+import { BrowserRouter as Router } from "react-router-dom";
 import App from "./App";
 import Condrend from "./CondRend";
 import UseState from "./UseState";
