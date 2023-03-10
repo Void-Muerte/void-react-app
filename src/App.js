@@ -7,9 +7,6 @@ function Header(props) {
     </header>
   );
 }
-function Footer(props) {
-  return <p>Copyright &copy; {props.year}</p>;
-}
 function Objective(props) {
   return (
     <div>
@@ -34,20 +31,23 @@ const objectives = [
   "Export model to gltf",
   "Create the Html ",
   "Create a scene",
-  "Render the scene"
+  "Render the scene",
 ];
 const listObj = objectives.map((objective, objectiveId) => ({
   id: objectiveId,
-  name: objective
+  name: objective,
 }));
 
 export default function App() {
   return (
-    <div className="App">
-      <Header prog="React" />
-      <Eye />
-      <Objective env="Web3D" objectives={listObj} />
-      <Footer year={new Date().getFullYear()} />
-    </div>
+    <>
+      <div className="App compo">
+        <Header prog="React" />
+        <Eye />
+      </div>
+      <div className="compo">
+        <Objective env="Web3D" objectives={listObj} />
+      </div>
+    </>
   );
 }

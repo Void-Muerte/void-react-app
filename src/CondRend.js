@@ -7,5 +7,9 @@ function RegularComponent() {
   return <h1>Regular information which everyone can see.</h1>;
 }
 export default function Condrend(props) {
-  return <>{props.authorized ? <SecretComponet /> : <RegularComponent />}</>;
+  return (
+    <div className="compo">
+      {props.authorized ? <SecretComponet /> : <RegularComponent />}
+    </div>
+  );
 }

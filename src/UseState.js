@@ -11,7 +11,7 @@ export default function () {
     console.log(`Its ${secondary} here!`);
   }, [secondary]);
   return (
-    <div className="Def App">
+    <div className="Def App compo">
       <h2>Today I'm {first}</h2>
       <button
         onClick={() => {

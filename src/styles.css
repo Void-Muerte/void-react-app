@@ -4,5 +4,13 @@
 }
 .Def {
   background-image: url("./images/eye.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   height: 50vh;
+}
+.compo {
+  border: 2px solid aqua;
+  border-radius: 5px;
+  margin: 5px;
 }
