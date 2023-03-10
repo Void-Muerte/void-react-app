@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {Header} from './App'
+import { Header } from "./App";
 /*
 import App from "./App";
 import Condrend from "./CondRend";
@@ -16,23 +16,19 @@ import UseReducer from "./UseReducer";
 export function Home() {
   return (
     <div>
-     <Header prog="React"/>
+      <Header prog="React" />
       <nav>
         <Link to="about">About</Link>
         <Link to="products">Products</Link>
         <Link to="contact">Contact</Link>
-        <Link to=""></Link>
       </nav>
     </div>
   );
-  et;
-  et;
-  et;
 }
 export function About() {
   return (
     <div>
-      <h1>[About]</h1>
+      <h1>[About Us]</h1>
       <Link to="home">Home</Link>
     </div>
   );
@@ -53,11 +49,10 @@ export function Contact() {
     </div>
   );
 }
-export function error404() {
+export function Error404() {
   return (
     <div>
       <h1>Page does not exist</h1>
     </div>
   );
 }
-;

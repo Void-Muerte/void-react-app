@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Home, About, Products, Contact, error404 } from "./pages";
+import { Home, About, Products, Contact, Error404 } from "./pages";
 
 export default function RoutingV() {
   return (
@@ -9,8 +9,7 @@ export default function RoutingV() {
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<error404 />} />R>
-        R>
+        <Route path="*" element={<Error404 />} />
       </Routes>
     </div>
   );

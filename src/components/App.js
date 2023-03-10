@@ -1,5 +1,5 @@
-import "./styles.css";
-import img_ex from "./images/eye.png";
+import "../styles.css";
+import img_ex from "../images/eye.png";
 
 export function Header(props) {
   return (
