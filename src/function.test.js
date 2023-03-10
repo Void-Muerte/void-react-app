@@ -1,5 +1,5 @@
-import { timesFour } from "./function";
+import { timesFour } from "./tests/function";
 
 test("Multiples of two", () => {
-  expect(timesFour(4)).toBe(16); 
+  expect(timesFour(4)).toBe(16);
 });

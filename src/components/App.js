@@ -1,13 +1,14 @@
 import "./styles.css";
 import img_ex from "./images/eye.png";
-function Header(props) {
+
+export function Header(props) {
   return (
     <header>
       <h1>My first {props.prog} project</h1>
     </header>
   );
 }
-function Objective(props) {
+export function Objective(props) {
   return (
     <div>
       <h2>How to create a scene in {props.env}</h2>
@@ -19,7 +20,7 @@ function Objective(props) {
     </div>
   );
 }
-function Eye() {
+export function Eye() {
   return (
     <>
       <img src={img_ex} height={150} alt="eye" />
@@ -41,10 +42,6 @@ const listObj = objectives.map((objective, objectiveId) => ({
 export default function App() {
   return (
     <>
-      <div className="App compo">
-        <Header prog="React" />
-        <Eye />
-      </div>
       <div className="compo">
         <Objective env="Web3D" objectives={listObj} />
       </div>
